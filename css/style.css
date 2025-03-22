@@ -12,3 +12,66 @@ li {
 a {
   text-decoration: none;
 }
+
+.leader {
+  max-width: 1017px;
+  margin: 100px auto;
+}
+
+.leader__title {
+  text-align: center;
+}
+
+.leader__underline {
+  width: 100px;
+  height: 4px;
+  margin: 0 auto;
+  background: #2B9AD6;
+  margin-top: 26px;
+}
+
+.leader__list {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 169px 100px;
+}
+
+.leader__item {
+  background: center / cover url(../images/Rodion-Zhitomirsky.png) no-repeat;
+  width: 224px;
+  height: 304px;
+  border: 1px solid #000;
+  position: sticky;
+  z-index: -1;
+
+  &:nth-child(2) {
+    background: center / cover url(../images/Sergey-Zubekhin.png) no-repeat;
+  }
+
+  &:nth-child(3) {
+    background: center / cover url(../images/Maria-Bondarenko.png) no-repeat;
+  }
+
+  &:nth-child(4) {
+    background: center / cover url(../images/Eugene-Boiko.png) no-repeat;
+  }
+
+  &:nth-child(5) {
+    background: center / cover url(../images/Fred-Bean.png) no-repeat;
+  }
+}
+
+.leader__item-circle {
+  width: 220px;
+  height: 224px;
+  border: 1px solid #000;
+  border-radius: 200px;
+  margin: 0 auto;
+}
+
+.leader__item-name {}
+
+.leader__item-job {}
