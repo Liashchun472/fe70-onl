@@ -13,65 +13,212 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-family: "Open Sans", sans-serif;
+}
+
 .leader {
-  max-width: 1017px;
-  margin: 100px auto;
+  padding: 100px 0;
+  background: #F1F8FC;
 }
 
 .leader__title {
   text-align: center;
-}
+  font: 700 40px/1 var(--font-family);
 
-.leader__underline {
-  width: 100px;
-  height: 4px;
-  margin: 0 auto;
-  background: #2B9AD6;
-  margin-top: 26px;
+  &::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    margin: 0 auto;
+    background: #2B9AD6;
+    margin-top: 26px;
+  }
 }
 
 .leader__list {
-  margin-top: 60px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 169px 100px;
+  gap: 104px 169px;
 }
 
 .leader__item {
-  background: center / cover url(../images/Rodion-Zhitomirsky.png) no-repeat;
-  width: 224px;
-  height: 304px;
-  border: 1px solid #000;
-  position: sticky;
-  z-index: -1;
+  border: 1px solid transparent;
+  border-radius: 13px;
+  height: 330px;
 
-  &:nth-child(2) {
-    background: center / cover url(../images/Sergey-Zubekhin.png) no-repeat;
+  /* images in circle */
+
+  &:nth-child(1) .leader__item-circle {
+    background: center/cover url(../images/rodion-zhitomirsky.png) no-repeat;
   }
 
-  &:nth-child(3) {
-    background: center / cover url(../images/Maria-Bondarenko.png) no-repeat;
+  &:nth-child(2) .leader__item-circle {
+    background: center/cover url(../images/sergey-zubekhin.png) no-repeat;
+
   }
 
-  &:nth-child(4) {
-    background: center / cover url(../images/Eugene-Boiko.png) no-repeat;
+  &:nth-child(3) .leader__item-circle {
+    background: center/cover url(../images/maria-bondarenko.png) no-repeat;
   }
 
-  &:nth-child(5) {
-    background: center / cover url(../images/Fred-Bean.png) no-repeat;
+  &:nth-child(4) .leader__item-circle {
+    background: center/cover url(../images/eugene-boiko.png) no-repeat;
+  }
+
+  &:nth-child(5) .leader__item-circle {
+    background: center/cover url(../images/fred-bean.png) no-repeat;
+  }
+
+  /* hover for items */
+
+  &:nth-child(1):hover {
+    background: center/cover url(../images/rodion-hover.jpg) no-repeat;
+
+    & .leader__item-circle {
+      background: center/cover url(../images/rodion-hover-photo.png);
+    }
+
+    & .leader__item-circle::after {
+      content: "";
+      background: center/cover url(../images/arrow.svg) no-repeat;
+    }
+
+    & .leader__item-name, .leader__item-job {
+      color: #fff;
+    }
+  }
+
+  &:nth-child(2):hover {
+    background: center/cover url(../images/sergey-hover.png) no-repeat;
+
+    & .leader__item-circle {
+      background: center/cover url(../images/sergey-hover-photo.png);
+    }
+
+    & .leader__item-circle::after {
+      content: "";
+      background: center/cover url(../images/arrow.svg) no-repeat;
+    }
+
+    & .leader__item-name, .leader__item-job {
+      color: #fff;
+    }
+  }
+
+  &:nth-child(3):hover {
+    background: center/cover url(../images/maria-hover.png) no-repeat;
+
+    & .leader__item-circle {
+      background: center/cover url(../images/maria-hover-photo.png);
+    }
+
+    & .leader__item-circle::after {
+      content: "";
+      background: center/cover url(../images/arrow.svg) no-repeat;
+    }
+
+    & .leader__item-name, .leader__item-job {
+      color: #fff;
+    }
+  }
+
+  &:nth-child(4):hover {
+    background: center/cover url(../images/eugene-hover.png) no-repeat;
+
+    & .leader__item-circle {
+      background: center/cover url(../images/eugene-hover-photo.png);
+    }
+
+    & .leader__item-circle::after {
+      content: "";
+      background: center/cover url(../images/arrow.svg) no-repeat;
+    }
+
+    & .leader__item-name, .leader__item-job {
+      color: #fff;
+    }
+  }
+
+  &:nth-child(5):hover {
+    background: center/cover url(../images/fred-hover.png) no-repeat;
+
+    & .leader__item-circle {
+      background: center/cover url(../images/fred-hover-photo.png);
+    }
+
+    & .leader__item-circle::after {
+      content: "";
+      background: center/cover url(../images/arrow.svg) no-repeat;
+    }
+
+    & .leader__item-name, .leader__item-job {
+      color: #fff;
+    }
   }
 }
 
 .leader__item-circle {
   width: 220px;
   height: 224px;
-  border: 1px solid #000;
   border-radius: 200px;
-  margin: 0 auto;
+  margin: 5px auto 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: center/cover url(../images/linkedin.svg) no-repeat;
+    top: 70%;
+    right: 10%;
+  }
 }
 
-.leader__item-name {}
+.leader__item-name, .leader__item-job {
+  transition: .5s;
+}
 
-.leader__item-job {}
+.leader__item-name {
+  font: 700 24px/1.4 var(--font-family);
+  color: #194F94;
+  margin-top: 20px;
+}
+
+.leader__item-job {
+  font: 400 17px/1.5 var(--font-family);
+  color: #5F5F5F;
+  width: 215px;
+}
