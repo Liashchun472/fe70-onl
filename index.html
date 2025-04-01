@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  
+  <form class="forms">
+
+    <fieldset class="forms__contacts">
+      <legend class="forms__title">Контактная информация</legend>
+
+      <label for="user-name" class="forms__item">
+        <span class="forms__subtitle">Имя<span class="forms__color-red">*</span></span>
+        <input type="text" placeholder="Введите имя">
+      </label>
+
+      <label for="user-tel" class="forms__item">
+        <span class="forms__subtitle">Телефон</span>
+        <input type="tel" placeholder="Введите номер телефона">
+      </label>
+
+      <label for="user-male" class="forms__item">
+        <span class="forms__subtitle">Email<span class="forms__color-red">*</span></span>
+        <input type="email" placeholder="Введите e-mail">
+      </label>
+    </fieldset>
+
+    <fieldset class="forms__personal">
+      <legend class="forms__title">Персональная информация</legend>
+
+      <label for="user-age" class="forms__item">
+        <span class="forms__subtitle">Возраст<span class="forms__color-red">*</span></span>
+        <input type="number" placeholder="Укажите возраст">
+      </label>
+
+      <label for="user-gender" class="forms__item">
+        <span class="forms__subtitle">Пол</span>
+        <select name="user-gender" id="user__gender">
+          <option value="men">Мужчина</option>
+          <option value="women">Женщина</option>
+          <option value="other">Иной гендер</option>
+        </select>
+      </label>
+
+      <label for="user-qualities" class="forms__item">
+        <span class="forms__subtitle">Перечислите личные качества</span>
+        <textarea name="user-qualities" id="user__qualities"></textarea>
+      </label>
+    </fieldset>
+
+    <fieldset class="forms__animals">
+      <legend class="forms__title">Выберите ваших любимых животных</legend>
+
+      <label for="user-animals" class="forms__animals-item">
+        <input type="checkbox">
+        <span>Зебра</span>
+      </label>
+
+      <label for="user-animals" class="forms__animals-item">
+        <input type="checkbox">
+        <span>Кошак</span>
+      </label>
+
+      <label for="user-animals" class="forms__animals-item">
+        <input type="checkbox">
+        <span>Анаконда</span>
+      </label>
+
+      <label for="user-animals" class="forms__animals-item">
+        <input type="checkbox">
+        <span>Человек</span>
+      </label>
+
+      <label for="user-animals" class="forms__animals-item">
+        <input type="checkbox">
+        <span>Слон</span>
+      </label>
+
+      <label for="user-animals" class="forms__animals-item">
+        <input type="checkbox">
+        <span>Антилопа</span>
+      </label>
+
+      <label for="user-animals" class="forms__animals-item">
+        <input type="checkbox">
+        <span>Голубь</span>
+      </label>
+
+      <label for="user-animals" class="forms__animals-item">
+        <input type="checkbox">
+        <span>Краб</span>
+      </label>
+    </fieldset>
+    <input type="submit" value="Отправить" class="forms__btn">
+  </form>
 </body>
+
 </html>

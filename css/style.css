@@ -12,3 +12,65 @@ li {
 a {
   text-decoration: none;
 }
+
+.forms {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.forms__contacts, .forms__personal, .forms__animals {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 20px;
+  width: 100%;
+}
+
+.forms__title {
+  font-size: 20px;
+}
+
+.forms__subtitle {
+  display: inline-block;
+  width: 100px;
+}
+
+.forms__item > input, select {
+  width: 250px;
+  height: 25px;
+  border: 1px solid #000;
+}
+
+.forms__color-red {
+  color: #FF0000;
+}
+
+.forms__animals {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.forms__animals-item {
+  width: 120px;
+}
+
+.forms__btn {
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #000;
+}
