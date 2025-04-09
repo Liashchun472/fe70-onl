@@ -10,6 +10,9 @@
 
 <body>
   <header class="header">
+
+    <div class="header__top">
+
       <div class="menu__function">
 
         <div class="burger-menu">
@@ -77,12 +80,18 @@
             stroke-linecap="square" stroke-linejoin="round" />
         </svg>
       </a>
-      
-    <h1 class="header__title">
-      Developing IT solutions to scale up your business
-    </h1>
+    </div>
 
-    <a href="#" class="header-link">Estimate project</a>
+    <div class="header__content">
+
+      <h1 class="header__title">
+        Developing IT solutions to scale up your business
+      </h1>
+
+      <a href="#" class="header__link">Estimate project</a>
+
+    </div>
+
   </header>
 
   <main class="content">
@@ -107,7 +116,7 @@
         <li class="goals__item">
           <span class="goals__item-number">02</span>
           <h3 class="goals__item-subtitle">
-            Title of the first goal
+            Title of the second goal
           </h3>
           <p class="goals__item-descr">
             A small text describing one of the goals in two lines.
@@ -125,20 +134,22 @@
         <li class="goals__item">
           <span class="goals__item-number">03</span>
           <h3 class="goals__item-subtitle">
-            Title of the first goal
+            Title of the third goal
           </h3>
           <p class="goals__item-descr">
-            A small text describing one of the goals in two lines.
+            A small text describing one of the goals in two lines. A small text describing one of the goals in two
+            lines.
           </p>
         </li>
 
         <li class="goals__item">
           <span class="goals__item-number">04</span>
           <h3 class="goals__item-subtitle">
-            Title of the first goal
+            Title of the fourth goal
           </h3>
           <p class="goals__item-descr">
-            A small text describing one of the goals in two lines.
+            A small text describing one of the goals in two lines. A small text describing one of the goals in two
+            lines.
           </p>
         </li>
 
@@ -244,6 +255,7 @@
     </section>
 
     <section class="how-work">
+
       <h2 class="how-work__title">
         How we work?
       </h2>
@@ -252,95 +264,169 @@
         Requirements analysis and statement of work
       </p>
 
-      <ul class="how-work__list">
+      <div class="how-work__item">
 
-        <li class="how-work__item">
+        <h3 class="how-work__item-subtitle">
+          Design (if required)
+        </h3>
 
-          <a href="#" class="how-work__link">
+        <p class="how-work__item-descr">
+          Some words about this step in our work.
+        </p>
 
-            <h3 class="how-work__item-subtitle">
-              Design (if required)
-            </h3>
+      </div>
 
-            <p class="how-work__item-descr">
-              Some words about this step in our work.
-            </p>
+      <div class="how-work__item">
 
-          </a>
+        <h3 class="how-work__item-subtitle">
+          Development, show demo version
+        </h3>
 
-        </li>
+        <p class="how-work__item-descr">
+          Some words about this step in our work.
+        </p>
 
-        <li class="how-work__item">
+      </div>
 
-          <a href="#" class="how-work__link">
+      <div class="how-work__item">
 
-            <h3 class="how-work__item-subtitle">
-              Development, show demo version
-            </h3>
+        <h3 class="how-work__item-subtitle">
+          Testing, completion
+        </h3>
 
-            <p class="how-work__item-descr">
-              Some words about this step in our work.
-            </p>
+        <p class="how-work__item-descr">
+          Some words about this step in our work.
+        </p>
 
-          </a>
+      </div>
 
-        </li>
+      <div class="how-work__item">
 
-        <li class="how-work__item">
+        <h3 class="how-work__item-subtitle">
+          Product launch
+        </h3>
 
-          <a href="#" class="how-work__link">
+        <p class="how-work__item-descr">
+          Some words about this step in our work.
+        </p>
 
-            <h3 class="how-work__item-subtitle">
-              Testing, completion
-            </h3>
+      </div>
 
-            <p class="how-work__item-descr">
-              Some words about this step in our work.
-            </p>
+      <div class="how-work__item">
 
-          </a>
+        <h3 class="how-work__item-subtitle">
+          Continued technical support
+        </h3>
 
-        </li>
+        <p class="how-work__item-descr">
+          Some words about this step in our work.
+        </p>
 
-        <li class="how-work__item">
-
-          <a href="#" class="how-work__link">
-
-            <h3 class="how-work__item-subtitle">
-              Product launch
-            </h3>
-
-            <p class="how-work__item-descr">
-              Some words about this step in our work.
-            </p>
-
-          </a>
-
-        </li>
-
-        <li class="how-work__item">
-
-          <a href="#" class="how-work__link">
-
-            <h3 class="how-work__item-subtitle">
-              Continued technical support
-            </h3>
-
-            <p class="how-work__item-descr">
-              Some words about this step in our work.
-            </p>
-
-          </a>
-
-        </li>
-
-      </ul>
+      </div>
 
       <a href="#" class="how-work__btn">
         Learn <br>more
       </a>
 
     </section>
+
+    <section class="technologies">
+
+      <h2 class="technologies__title">
+        Used technologies
+      </h2>
+
+      <p class="technologies__text">
+        Fill the gaps in your competencies by setting up a remote IT team. We will find the best experts for you and
+        arrange everything around it. You will get a perfect match both in skills and cultural fit.
+      </p>
+
+      <form class="technologies__toggle">
+
+        <label class="technologies__toggle-item">
+
+          <input type="radio" name="technology" checked class="technologies__toggle-btn">
+
+          <span class="technologies__toggle-title">Title of the technology</span>
+
+          <span class="technologies__toggle-descr">First technology description</span>
+
+        </label>
+
+        <label class="technologies__toggle-item">
+
+          <input type="radio" name="technology" class="technologies__toggle-btn">
+
+          <span class="technologies__toggle-title">Title of the technology</span>
+
+          <span class="technologies__toggle-descr">Second technology description</span>
+
+        </label>
+
+        <label class="technologies__toggle-item">
+
+          <input type="radio" name="technology" class="technologies__toggle-btn">
+
+          <span class="technologies__toggle-title">Title of the technology</span>
+
+          <span class="technologies__toggle-descr">Third technology description</span>
+
+        </label>
+
+        <label class="technologies__toggle-item">
+
+          <input type="radio" name="technology" class="technologies__toggle-btn">
+
+          <span class="technologies__toggle-title">Title of the technology</span>
+
+          <span class="technologies__toggle-descr">Forth technology description</span>
+
+        </label>
+
+        <label class="technologies__toggle-item">
+
+          <input type="radio" name="technology" class="technologies__toggle-btn">
+
+          <span class="technologies__toggle-title">Title of the technology</span>
+
+          <span class="technologies__toggle-descr">Fifth technology description</span>
+
+        </label>
+
+        <label class="technologies__toggle-item">
+
+          <input type="radio" name="technology" class="technologies__toggle-btn">
+
+          <span class="technologies__toggle-title">Title of the technology</span>
+
+          <span class="technologies__toggle-descr">Sixth technology description</span>
+
+        </label>
+
+        <label class="technologies__toggle-item">
+
+          <input type="radio" name="technology" class="technologies__toggle-btn">
+
+          <span class="technologies__toggle-title">Title of the technology</span>
+
+          <span class="technologies__toggle-descr">Seventh technology description</span>
+
+        </label>
+
+        <label class="technologies__toggle-item">
+
+          <input type="radio" name="technology" class="technologies__toggle-btn">
+
+          <span class="technologies__toggle-title">Title of the technology</span>
+
+          <span class="technologies__toggle-descr">Eighth technology description</span>
+
+        </label>
+
+      </form>
+
+    </section>
+
 
   </main>
 
