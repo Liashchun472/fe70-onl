@@ -1,0 +1,24 @@
+body {
+  max-width: 1024px;
+  margin: 100px auto;
+}
+
+.technologies__toggle {
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px ;
+  border-left: 3px solid rgba(147, 150, 155, 0.5);
+}
+
+.technologies__toggle-item {
+  
+}
+.technologies__toggle-btn {
+  display: none;
+}
+.technologies__toggle-title {
+}
+.technologies__toggle-descr {
+  display: none;
+}
