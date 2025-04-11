@@ -126,7 +126,6 @@ body {
   color: #fff;
   font: 400 24px/1 var(--font-neue);
   text-transform: lowercase;
-  color: #fff;
 }
 
 .header__title {
@@ -161,7 +160,6 @@ body {
 
 .header__lang-list {
   background: transparent;
-  border: none;
   color: #fff;
   border: 1px solid transparent;
   border-radius: 2px;
@@ -260,8 +258,6 @@ body {
   width: 280px;
   height: 280px;
   border: 2px solid #fff;
-  border-radius: 50%;
-  color: #fff;
   transition: all .5s;
 
   &:hover {
@@ -647,7 +643,6 @@ body {
 
 .technologies__toggle-title {
   display: none;
-  color: #93969B;
   font: 400 26px/1.3 var(--font-neue);
   color: #2F353F;
 }
@@ -818,7 +813,6 @@ body {
   border-bottom: 2px solid #fff;
   font: 400 32px/1.5 var(--font-gilroy);
   color: rgba(255, 255, 255, 0.4);
-  width: 100%;
   transition: all .5s ease;
 
   &::placeholder {
@@ -830,7 +824,7 @@ body {
   position: relative;
   border-bottom: 2px solid #fff;
   width: 100%;
-  transition: all .5 s;
+  transition: all .5s;
 
   &::after {
     content: "";
@@ -893,9 +887,7 @@ body {
   border-bottom: 1px solid rgba(47, 53, 63, 0.5);
 }
 
-.footer__contacts,
-.footer__offices,
-.footer__services {
+.footer__contacts, .footer__offices, .footer__services {
   padding-top: 50px;
 }
 
@@ -968,11 +960,7 @@ body {
   height: 20px;
 }
 
-.footer__offices,
-.footer__offices-list,
-.footer__offices-city,
-.footer__services,
-.footer__services-list {
+.footer__offices, .footer__offices-list, .footer__offices-city, .footer__services, .footer__services-list {
   display: flex;
   flex-direction: column;
 }
@@ -981,8 +969,7 @@ body {
   gap: 50px;
 }
 
-.footer__offices-subtitle,
-.footer__services-subtitle {
+.footer__offices-subtitle, .footer__services-subtitle {
   font: 400 20px/1 var(--font-neue);
   text-transform: lowercase;
 }
@@ -1043,9 +1030,7 @@ body {
 }
 
 @media (max-width: 1400px) {
-
   /* header */
-
   .menu {
     padding-right: 20px;
   }
@@ -1169,8 +1154,7 @@ body {
     font-size: 19px;
   }
 
-  .footer__offices-link,
-  .footer__services-link {
+  .footer__offices-link, .footer__services-link {
     font-size: 16px;
   }
 
@@ -1182,9 +1166,7 @@ body {
 }
 
 @media (max-width: 1300px) {
-
   /* header */
-
   .header__contact-link {
     padding: 15px 30px;
   }
@@ -1209,10 +1191,7 @@ body {
     padding: 100px 75px;
   }
 
-  .features,
-  .how-work,
-  .technologies,
-  .industries {
+  .features, .how-work, .technologies, .industries {
     margin-top: 100px;
   }
 
@@ -1220,11 +1199,7 @@ body {
 
   /* all h2 */
 
-  .goals__title,
-  .features__title,
-  .how-work__title,
-  .technologies__title,
-  .industries__title {
+  .goals__title, .features__title, .how-work__title, .technologies__title, .industries__title {
     font-size: 42px;
   }
 
@@ -1470,7 +1445,6 @@ body {
 }
 
 @media (max-width: 1024px) {
-
   .header {
     padding: 100px 40px 0;
   }
@@ -1489,8 +1463,7 @@ body {
     border: none;
   }
 
-  .burger-menu,
-  .header__contact-link {
+  .burger-menu, .header__contact-link {
     width: 100px;
     height: 100px;
     background: #fff;
@@ -1513,8 +1486,7 @@ body {
     transition: all .5s;
     z-index: 2;
 
-    &::before,
-    &::after {
+    &::before, &::after {
       content: "";
       position: absolute;
       width: 45px;
@@ -1645,10 +1617,7 @@ body {
     padding: 125px 40px;
   }
 
-  .features,
-  .how-work,
-  .technologies,
-  .industries {
+  .features, .how-work, .technologies, .industries {
     margin-top: 0;
   }
 
@@ -1721,19 +1690,18 @@ body {
     }
   }
 
+  .features__slider-list + .swiper {
+    width: 100%;
+    overflow: hidden;
+  }
+
   .features__slider-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%;
   }
 
   .features__slider-descr {
     margin-top: 20px;
     padding: 50px;
-
-    &:not(:first-child) {
-      display: none;
-    }
   }
 
   .features__slider-subtitle {
@@ -1934,11 +1902,6 @@ body {
     border-radius: 40px;
     max-width: 880px;
 
-    /* скрыл все элементы слайдера, кроме одного до появления функционала */
-
-    &~.reviews__slider-item {
-      display: none;
-    }
   }
 
   .reviews__slider-photo {
@@ -1971,7 +1934,6 @@ body {
   }
 
   .reviews__slider-link {
-    display: block;
     grid-column: span 2;
     margin-top: 100px;
     text-transform: uppercase;
