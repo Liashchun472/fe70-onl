@@ -1,3 +1,10 @@
+// overflow hidden for body
+
+document.querySelector('.burger-menu').addEventListener('click', function (){
+  document.body.classList.toggle('fix');
+});
+
+
 // работа кнопки в header
 
 document.querySelector('.burger-menu').addEventListener('click', function () {
