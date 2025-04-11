@@ -2000,7 +2000,7 @@ body {
 
   /* contact us */
 
-  /* .contact-us {
+ .contact-us {
     padding: 50px;
     margin-top: 125px;
   }
@@ -2065,11 +2065,11 @@ body {
     width: 34px;
     height: 34px;
     margin-left: 20px;
-  } */
+  }
 
   /* footer */
 
-  /* .footer {
+  .footer {
     padding: 125px 40px 100px;
     display: grid;
     grid-template-rows: repeat(3, max-content);
@@ -2189,7 +2189,7 @@ body {
   .privacy__item {
     font: 400 30px/1 var(--font-gilroy);
     color: var(--main-text-color);
-  } */
+  }
 }
 
 /* media < 550px */
