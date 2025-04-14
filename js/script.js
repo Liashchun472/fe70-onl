@@ -12,6 +12,7 @@ document.querySelector('.burger-menu').addEventListener('click', function () {
   document.querySelector('.menu__list').classList.toggle('open');
 });
 
+// слайдер для .features
 
 (() => {
   let featuresSlides = document.querySelectorAll('.features__slider-item');
@@ -31,3 +32,23 @@ document.querySelector('.burger-menu').addEventListener('click', function () {
     });
   }
 })();
+
+// слайдер для .reviews
+
+const swiper = new Swiper('.swiper2', {
+  loop: true,
+  speed: 800,
+  allowTouchMove: true,
+  slidesPerView: 1,
+});
+
+swiper.on('slideChange', () => {
+  document.querySelectorAll('.swiper-slide2').forEach(slide => {
+      slide.style.opacity = '0';
+  });
+
+  const activeSlide = document.querySelector('.swiper-slide-active');
+  if (activeSlide) {
+      activeSlide.style.opacity = '1';
+  }
+});
